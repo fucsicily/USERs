@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.masterchief.users.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    >
+    <include layout="@layout/title"/>
+    <Button
+        android:id = "@+id/Bn_logon"
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_creator="1"
+        android:layout_marginStart="74dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Bn_regist"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="-67dp" />
+    <Button
+        android:id = "@+id/Bn_regist"
+        android:text = "注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="67dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="166dp" />
+
+    <ImageButton
+        android:id="@+id/history_bn"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src = "@mipmap/ic_arrow_forward"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="67dp" />
+    <ImageButton
+        android:id="@+id/change_password_bn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:src = "@mipmap/ic_arrow_forward"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/history_bn"
+        app:layout_constraintTop_toBottomOf="@+id/history_bn"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/history_bn"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="18dp" />
+    <TextView
+        android:id="@+id/history_text"
+        android:layout_width="75dp"
+        android:layout_height="21dp"
+        android:text="历史动态"
+        android:layout_marginEnd="12dp"
+        tools:layout_editor_absoluteY="200dp"
+        tools:layout_editor_absoluteX="184dp" />
+    <TextView
+        android:id="@+id/change_password_text"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:text="更改密码"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="43dp"
+        app:layout_constraintTop_toBottomOf="@+id/history_text"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/history_text"
+        android:layout_marginLeft="-11dp" />
+
+</android.support.constraint.ConstraintLayout>
